@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Tim Lobes. All rights reserved.
 //
 
-#include <iostream>
 #include "List.h"
 
 int main() {
