@@ -9,8 +9,6 @@
 #ifndef __linkedListPractice__List__
 #define __linkedListPractice__List__
 
-#include <cstdio>
-
 // Linked List
 class List {
 private:
@@ -18,7 +16,7 @@ private:
     typedef struct node {
         int data;
         node* next;
-    } * nodePtr; // also typedef struct node* nodePtr;
+    } * nodePtr; // typedef struct node* nodePtr;
     
     nodePtr head;
     nodePtr curr;
@@ -28,8 +26,10 @@ public:
     
     List();
     void AddNode(int addData);
-    void DeleteNode(int delData);
+    void DeleteNode(int delData); // Deletes first instance of delData
     void PrintList();
+    void SearchList(int searchData); // Returns every instance and location of searchData
+    void GetValueAt(unsigned int n);
     
 };
 
